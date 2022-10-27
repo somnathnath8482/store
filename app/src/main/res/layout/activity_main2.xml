@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.artix.store.MyView.PieChart
+        android:id="@+id/pyu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:Text=""
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:TextMarginLeft="@dimen/_20sdp"
+        app:TextMarginTop="@dimen/_20sdp"
+        app:TextSize="@dimen/_9sdp"
+        app:labelPosition="right"
+        app:showText="true" />
+
+</RelativeLayout>
